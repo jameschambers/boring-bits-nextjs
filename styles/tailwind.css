@@ -1,0 +1,119 @@
+@tailwind base;
+
+a {
+  @apply underline text-internet-blue;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fadeIn { animation-name: fadeIn; }
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.fadeOut { animation-name: fadeOut; }
+
+/** Used to define container behavior: width, position: fixed etc... **/
+.Toastify__toast-container {
+  @apply fixed top-0 right-0 w-full max-w-md pt-4 pr-4 font-sans;
+}
+
+/** Classes for the displayed toast **/
+.Toastify__toast {
+  @apply flex items-center p-4 rounded-md;
+}
+.Toastify__toast--rtl {
+}
+.Toastify__toast--dark {
+}
+
+/** Default **/
+.Toastify__toast--default {
+  @apply text-blue-700 bg-blue-100;
+}
+.Toastify__toast--default > .Toastify__custom-close-button  {
+  @apply text-blue-500;
+}
+.Toastify__toast--default > .Toastify__custom-close-button:hover  {
+  @apply text-blue-700;
+}
+.Toastify__toast--default > .Toastify__custom-close-button:focus  {
+  @apply text-blue-700;
+}
+/** Info **/
+.Toastify__toast--info {
+  @apply text-blue-700 bg-blue-100;
+}
+.Toastify__toast--info > .Toastify__custom-close-button  {
+  @apply text-blue-500;
+}
+.Toastify__toast--info > .Toastify__custom-close-button:hover  {
+  @apply text-blue-700
+}
+.Toastify__toast--info > .Toastify__custom-close-button:focus  {
+  @apply text-blue-700
+}
+
+/** Info **/
+.Toastify__toast--success {
+  @apply text-green-700 bg-green-100;
+}
+.Toastify__toast--success > .Toastify__custom-close-button  {
+  @apply text-green-500;
+}
+.Toastify__toast--success > .Toastify__custom-close-button:hover  {
+  @apply text-green-700
+}
+.Toastify__toast--success > .Toastify__custom-close-button:focus  {
+  @apply text-green-700
+}
+
+/** Warning **/
+.Toastify__toast--warning {
+  @apply text-yellow-700 bg-yellow-100;
+}
+.Toastify__toast--warning > .Toastify__custom-close-button  {
+  @apply text-yellow-600;
+}
+.Toastify__toast--warning > .Toastify__custom-close-button:hover  {
+  @apply text-yellow-700;
+}
+.Toastify__toast--warning > .Toastify__custom-close-button:focus  {
+  @apply text-yellow-700;
+}
+
+/** Error **/
+.Toastify__toast--error {
+  @apply text-red-700 bg-red-100;
+}
+.Toastify__toast--error > .Toastify__custom-close-button  {
+  @apply text-red-500;
+}
+.Toastify__toast--error > .Toastify__custom-close-button:hover  {
+  @apply text-red-700;
+}
+.Toastify__toast--error > .Toastify__custom-close-button:focus  {
+  @apply text-red-700;
+}
+.Toastify__toast-body {
+  @apply flex-auto;
+}
+
+/** Classes for the progress bar **/
+.Toastify__progress-bar {
+}
+.Toastify__progress-bar--animated {
+}
+.Toastify__progress-bar--controlled {
+}
+.Toastify__progress-bar--rtl {
+}
+.Toastify__progress-bar--default {
+}
+.Toastify__progress-bar--dark {
+}
+@tailwind components;
+@tailwind utilities;
