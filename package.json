@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "release": "standard-version"
   },
   "dependencies": {
     "@storybook/addon-essentials": "^6.0.26",
@@ -35,7 +36,14 @@
     "@storybook/react": "^6.0.26",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
+    "cz-conventional-changelog": "3.3.0",
     "postcss-preset-env": "^6.7.0",
+    "standard-version": "^9.0.0",
     "storybook-formik": "^2.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

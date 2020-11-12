@@ -33,7 +33,7 @@ $ storybook
 
 That's it. In the app you've got a login form, a signup form, and a protected route. You'll also find storybook running with your basic UI components. The rest - as they say - is up to you.
 
-## Connecting to an API
+## Connect to an API
 
 Authentication itself happens through an API (e.g. if you're in the market, check out this [Rails API template](https://jameschambers.co.uk/rails-api). Whatever solution you use, you'll need to add the same JWT key you use on the server to your `.env.local`. file (see below). Note that all client-side ENV variables must be prefixed with `NEXT_PUBLIC_`.
 
