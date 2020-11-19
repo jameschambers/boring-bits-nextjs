@@ -4,6 +4,8 @@
 
 It's not glamourous. It's not sexy. It's just a dependably Boring starting point for your next frontend.
 
+Plays nicely with [Boring Bits: Rails API Edition](https://github.com/jameschambers/boring-bits-rails-api).
+
 ## Highlights
 
 - Authentication with client-side JWT validation
